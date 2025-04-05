@@ -1,7 +1,7 @@
 import { Game } from '@/hooks/useGames'
 import { Card, CardBody, CardRoot, Heading, HStack, Image, Text } from '@chakra-ui/react'
 import PlatformIconList from './PlatformIconList'
-import { platform } from 'os'
+
 import CriticScore from './CriticScore'
 
 interface Props{
@@ -10,7 +10,7 @@ interface Props{
 
 const GameCard = ({game}:Props) => {
   return (
-    <Card.Root borderRadius={10} overflow={'hidden'}>
+    <Card.Root width='300px' borderRadius={10} overflow={'hidden'}>
         <Image src={game.background_image}/>
         <CardBody>
             <Heading fontSize="2xl">{game.name}</Heading>
