@@ -4,9 +4,10 @@ import { SkeletonText } from "./ui/skeleton"
 
 const GameCardSkeleton = () => {
   return (
-    <Card.Root width="300px" borderRadius="10px" overflow="hidden">
+    <Card.Root>
         <Skeleton height="200px" />
         <CardBody>
+          {/* mimic the layout of the game card */}
             <SkeletonText height={5}/>
         </CardBody>
     </Card.Root>
